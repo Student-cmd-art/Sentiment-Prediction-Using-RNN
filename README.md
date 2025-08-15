@@ -10,7 +10,6 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 - **Dataset:** IMDB movie reviews (25k train / 25k test), pre-tokenised
 - **Architecture:** `Embedding -> SimpleRNN -> Dense (Sigmoid)`
 
----
 
 ## Input Handling
 
@@ -18,7 +17,6 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 - All other words are replaced with `<UNK>`  
 - Each review is **padded/truncated to 500 tokens** to maintain a fixed input size
 
----
 
 ## Model Architecture
 
@@ -28,7 +26,6 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 | SimpleRNN | 128 units, ReLU activation – processes sequence        |
 | Dense     | 1 unit, Sigmoid – outputs probability of sentiment     |
 
----
 
 ## Training Setup
 
@@ -36,7 +33,6 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 - **Optimizer:** Adam (learning rate = 0.0001)  
 - **Callback:** `EarlyStopping(patience=5, monitor='val_loss')`
 
----
 
 ## Evaluation Metrics
 
@@ -48,7 +44,6 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 **Performance:**  
 ~88% accuracy and ~0.95 ROC-AUC on test set.
 
----
 
 ## Single Review Prediction Pipeline
 
@@ -65,12 +60,8 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 |------------------------------------|------------|-----------|
 | `"This movie was surprisingly good!"` | 0.91       | Positive  |
 
----
-
 ## Possible Extensions
 
 - Replace SimpleRNN with **LSTM** or **GRU** for better context modelling  
 - Use **pre-trained word embeddings** (e.g., GloVe)  
 - Add **Dropout** or **Batch Normalization** for regularisation
-
----
