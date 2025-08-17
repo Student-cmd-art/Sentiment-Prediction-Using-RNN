@@ -66,5 +66,5 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 - Use **pre-trained word embeddings** (e.g., GloVe)  
 - Add **Dropout** or **Batch Normalization** for regularisation
 
-##Streamlit App
+## Streamlit App
 https://sentiment-prediction-using-rnn-ns2h9ybqwbgcsnulb9baa4.streamlit.app
