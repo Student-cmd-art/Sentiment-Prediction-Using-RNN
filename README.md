@@ -65,3 +65,6 @@ Binary sentiment analysis on the IMDB movie review dataset using a lightweight S
 - Replace SimpleRNN with **LSTM** or **GRU** for better context modelling  
 - Use **pre-trained word embeddings** (e.g., GloVe)  
 - Add **Dropout** or **Batch Normalization** for regularisation
+
+##Streamlit App
+https://sentiment-prediction-using-rnn-ns2h9ybqwbgcsnulb9baa4.streamlit.app
