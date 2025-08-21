@@ -83,12 +83,6 @@ Recurrent Neural Networks are designed to handle **sequential data**, where the 
 - **Customer Behaviour Sequence Modelling / Churn Prediction:**  
   Instead of static attributes, track sequences of customer actions (e.g logins, payments, enquiries) over time to detect behavioural drift signalling churn.
 
-- **Time-Series Forecasting for Loss Prediction:**  
-  Predict future claim amounts/frequency using historical payout sequences,
-
-- **Automated Claims Processing (NLP):**  
-  Use RNNs to read and understand free-text claim descriptions or adjuster notes in order to route, summarise, or prioritise claims.
-
 - **Underwriting Risk Signal Modelling:**  
   Analyse sequences of sensor / telematics data (e.g driving behaviour in motor insurance or IoT devices in home insurance) to update risk scores.
 
